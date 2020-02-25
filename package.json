@@ -1,0 +1,27 @@
+{
+  "name": "portfolio-code",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+	"dev": "next",
+	"build": "next build",
+	"start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dausp/portfolio-code.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dausp/portfolio-code/issues"
+  },
+  "homepage": "https://github.com/dausp/portfolio-code#readme",
+  "dependencies": {
+    "next": "^9.2.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
