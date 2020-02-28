@@ -17,12 +17,8 @@ const Header = () => (
 		<Link href="/contact">
 			<a>Contact <LaunchIcon /></a>
 		</Link>
-		<Link href="https://www.linkedin.com/in/patrick-daus-53491322/">
-			<a target="_blank">LinkedIn <LinkedInIcon /></a>
-		</Link>
-		<Link href="https://github.com/dausp">
-			<a target="_blank">Github <GitHubIcon /></a>
-		</Link>
+		<a href="https://www.linkedin.com/in/patrick-daus-53491322/" target="_blank">LinkedIn <LinkedInIcon /></a>
+		<a href="https://github.com/dausp" target="_blank">Github <GitHubIcon /></a>
 		<style jsx>
 		{`
 			.links a {
