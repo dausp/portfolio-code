@@ -1,6 +1,6 @@
 # About
 
-This is the Next.js/React project that powers dausp.github.io
+Abandoned Next.js/React that was going to power the portfolio but I decided to switch to Gatsby.
 
 ## Run locally
 
