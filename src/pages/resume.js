@@ -15,7 +15,7 @@ const Resume = () => (
     <p>Check out my Resum&eacute;, dawg</p>
     <p><a href="">Download a PDF of it bro</a></p>
     <article>
-      <header>
+      <header className="flex-cont">
         <div>
           <h3>Patrick M. Daus</h3>
           <p>Senior Software Developer | Accessibility Consultant</p>
@@ -26,19 +26,33 @@ const Resume = () => (
           <p>dausp.github.com</p>
         </div>
       </header>
-      <div>
-        <Experience />
-      </div>
-      <div>
-        <Education />
-        <Skills />
-        <Awards />
+      <div className="flex-cont">
+        <div className="exp-cont">
+          <Experience />
+        </div>
+        <div className="else-cont">
+          <Education />
+          <Skills />
+          <Awards />
+        </div>
       </div>
     </article>
     <style jsx>{`
       article {
         background: #f9f9f9;
-        padding: 4rem;
+        padding: 5rem;
+        display: flex;
+        flex-direction: column;
+      }
+      header.flex-cont {
+        justify-content: space-between;
+      }
+      .exp-cont {
+        width: 70%;
+      }
+      .else-cont {
+        width 30%;
+        padding-left: 2rem;
       }
     `}</style>
   </Layout>

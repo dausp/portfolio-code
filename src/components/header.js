@@ -8,7 +8,7 @@ const Header = ({ siteTitle }) => (
     <div
       style={{
         margin: `0 auto`,
-        maxWidth: `52rem`,
+        maxWidth: `58rem`,
         padding: `1.45rem 1.0875rem`
       }}
     >
@@ -20,7 +20,7 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
           // #008D91
-          // #004F52
+          // #004F52 prev
           // #00CAD1
           // #00D6DE
           // #00B3B8

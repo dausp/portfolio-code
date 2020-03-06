@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
       <div className='paddy-thing site-content'
         style={{
           margin: `0 auto`,
-          maxWidth: `52rem`,
+          maxWidth: `58rem`,
           padding: `0 1.0875rem 1.45rem`,
         }}
       >

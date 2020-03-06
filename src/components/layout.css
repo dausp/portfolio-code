@@ -185,7 +185,7 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.45em georgia, serif;
+  font: 100% georgia, serif; /* 112.5%/1.45em georgia, serif; */
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -200,7 +200,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: Tahoma, georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -633,12 +633,30 @@ header a {
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #008D91;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-style: italic;
 }
 h5 {
   font-size: 1.1rem;
+  font-family: Tahoma, georgia, serif;
+  margin-bottom: 0.65rem;
+  font-weight: normal;
+  margin-top: 2rem;
 }
 h6 {
   font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+h5 > em {
+  display: inline-block;
+}
+h6 > span {
+  display: inline-block;
+}
+.flex-cont {
+  display: flex;
+  flex-wrap: wrap;
 }
