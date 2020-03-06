@@ -1,9 +1,10 @@
-# About
+The codebase (React/Gatsby) for the portfolio website hosted at [dausp.github.io](https://dausp.github.io/).
 
-Abandoned Next.js/React that was going to power the portfolio but I decided to switch to Gatsby.
+To run locally:
+1. Clone the repo
+2. Run `npm install`
+3. Then run `gatsby develop`
 
-## Run locally
-
-1. Clone project
-2. run 'npm install' in terminal
-3. run 'npm run dev' in terminal
+To export static content:
+* Run `gatsby build`
+* Test prod build locally with `gatsby build`

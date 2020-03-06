@@ -1,36 +1,47 @@
 {
-  "name": "portfolio-code",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "name": "pat-daus-portfolio",
+  "private": true,
+  "description": "Portfolio website with Pat Daus's work as well as his resume and contact information.",
+  "version": "0.5.0",
+  "author": "Patrick Daus <daus.pat@gmail.com>",
+  "dependencies": {
+    "@primer/octicons-react": "^9.5.0",
+    "gatsby": "^2.19.7",
+    "gatsby-image": "^2.2.39",
+    "gatsby-plugin-manifest": "^2.2.39",
+    "gatsby-plugin-offline": "^3.0.32",
+    "gatsby-plugin-react-helmet": "^3.1.21",
+    "gatsby-plugin-sharp": "^2.4.3",
+    "gatsby-plugin-styled-jsx": "^3.1.19",
+    "gatsby-source-filesystem": "^2.1.46",
+    "gatsby-transformer-sharp": "^2.3.13",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1",
+    "styled-jsx": "^3.2.4"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-	"start": "next start",
-	"export": "next export"
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dausp/portfolio-code.git"
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dausp/portfolio-code/issues"
-  },
-  "homepage": "https://github.com/dausp/portfolio-code#readme",
-  "dependencies": {
-    "@material-ui/core": "^4.9.4",
-    "@material-ui/icons": "^4.9.1",
-    "next": "^9.2.2",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "react-markdown": "^4.3.1"
-  },
-  "devDependencies": {
-    "@types/node": "^13.7.6",
-    "@types/react": "^16.9.23",
-    "typescript": "^3.8.2"
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
