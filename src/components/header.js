@@ -5,50 +5,50 @@ import Octicon, {Home, FileCode, FileDirectory, Mention} from '@primer/octicons-
 
 const Header = ({ siteTitle }) => (
   <header>
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: `58rem`,
-        padding: `1.45rem 1.0875rem`
-      }}
-    >
+    <div className="flex-cont" style={{ alignItems: `center` }}>
       <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-          // #008D91
-          // #004F52 prev
-          // #00CAD1
-          // #00D6DE
-          // #00B3B8
-        >
+        <Link to="/"style={{ textDecoration: `none` }}>
           {siteTitle}
         </Link>
       </h1>
-      <Link to="/" className="header-link">
-        Home
-        <Octicon icon={Home} size='small'/>
-      </Link>
-      {/* <Link to="/work/" className="header-link">
-        Work
-        <Octicon icon={FileCode} size='small'/>
-      </Link> */}
-      <Link to="/resume/" className="header-link">
-        Resume
-        <Octicon icon={FileDirectory} size='small'/>
-      </Link>
-      <Link to="/contact/" className="header-link">
-        Contact
-        <Octicon icon={Mention} size='small'/>
-      </Link>
+      <nav>
+        <Link to="/" className="header-link">
+          Home
+          <Octicon icon={Home} size='small'/>
+        </Link>
+        {/* <Link to="/work/" className="header-link">
+          Work
+          <Octicon icon={FileCode} size='small'/>
+        </Link> */}
+        <Link to="/resume/" className="header-link">
+          Resume
+          <Octicon icon={FileDirectory} size='small'/>
+        </Link>
+        <Link to="/contact/" className="header-link">
+          Contact
+          <Octicon icon={Mention} size='small'/>
+        </Link>
+      </nav>
     </div>
     <style jsx>{`
       header {
         background: #004F52;
         margin-bottom: 1.45rem;
+      }
+      header > div {
+        margin: 0 auto;
+        max-width: 58rem;
+        padding: 1.45rem 1.0875rem;
+      }
+      header h1 {
+        width: 50%;
+      }
+      header nav {
+        text-align: right;
+        width: 50%;
+      }
+      header nav a {
+        padding: 0 2rem;
       }
     `}</style>
   </header>

@@ -27,13 +27,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div className='paddy-thing site-content'
-        style={{
-          margin: `0 auto`,
-          maxWidth: `58rem`,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <div className='padded site-content'>
         <main>{children}</main>
       </div>
       <Footer />
@@ -42,9 +36,9 @@ const Layout = ({ children }) => {
         .site-content {
           flex: 1;
         }
-        .paddy-thing {
+        .padded {
           margin: 0 auto;
-          max-width: 52rem;
+          max-width: 58rem;
           padding: 0 1.0875rem 1.45rem;
         }
       `}

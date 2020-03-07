@@ -12,8 +12,8 @@ const Resume = () => (
   <Layout>
     <SEO title="Pat Daus's Resume" />
     <h2>Resum&eacute;</h2>
-    <p>Check out my Resum&eacute;, dawg</p>
-    <p><a href="">Download a PDF of it bro</a></p>
+    <p>Check out my Resum&eacute;</p>
+    <p><a href="">Download a PDF of it</a></p>
     <article>
       <header className="flex-cont">
         <div>
@@ -21,9 +21,9 @@ const Resume = () => (
           <p>Senior Software Developer | Accessibility Consultant</p>
         </div>
         <div>
-          <p>Madison, WI area</p>
-          <p>daus.pat@gmail.com</p>
-          <p>dausp.github.com</p>
+          <p>Madison, WI area<br />
+            daus.pat@gmail.com<br />
+            dausp.github.com</p>
         </div>
       </header>
       <div className="flex-cont">

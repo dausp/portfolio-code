@@ -660,3 +660,7 @@ h6 > span {
   display: flex;
   flex-wrap: wrap;
 }
+
+section {
+  background: url('/images/ascendium.png');
+}
