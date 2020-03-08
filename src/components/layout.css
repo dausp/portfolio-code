@@ -660,7 +660,38 @@ h6 > span {
   display: flex;
   flex-wrap: wrap;
 }
-
-section {
-  background: url('/images/ascendium.png');
+a {
+  color: #1a1a1a;
+  text-decoration: none;
+  background-color: rgba(187,239,253,0.3);
+  border-bottom: 1px solid rgba(0,0,0,0.2);
 }
+a:hover {
+  background-color: #bbeffd;
+  border-bottom-color: #1a1a1a;
+}
+header nav a {
+  margin-left: 2rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+header a {
+  background: none;
+  border: none;
+}
+
+header a:hover, header a.active {
+  background: none;
+  border: none;
+  color: #00D6DE;
+}
+
+header a.active {
+  border-bottom: 2px solid #00D6DE;
+}
+
+/* // #008D91 - rgba(0, 141, 145, 1.0) */
+/* // #004F52 - rgba(0, 79, 82, 1.0) */
+/* // #00CAD1 - rgba(0, 202, 209, 1.0) */
+/* // #00D6DE - rgba(0, 214, 222, 1.0) */
+/* // #00B3B8 - rgba(0, 179, 184, 1.0) */

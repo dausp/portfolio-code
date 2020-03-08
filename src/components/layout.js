@@ -37,9 +37,13 @@ const Layout = ({ children }) => {
           flex: 1;
         }
         .padded {
-          margin: 0 auto;
           max-width: 58rem;
           padding: 0 1.0875rem 1.45rem;
+        }
+        @media only screen and (min-width: 600px) {
+          .site-content {
+            margin: 0 auto;
+          }
         }
       `}
       </style>

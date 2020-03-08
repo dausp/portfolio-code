@@ -12,21 +12,21 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
       <nav>
-        <Link to="/" className="header-link">
+        <Link to="/" activeClassName="active">
+          {/* <Octicon icon={Home} size='small'/> {``} */}
           Home
-          <Octicon icon={Home} size='small'/>
         </Link>
-        {/* <Link to="/work/" className="header-link">
+        {/* <Link to="/work/">
           Work
           <Octicon icon={FileCode} size='small'/>
         </Link> */}
-        <Link to="/resume/" className="header-link">
+        <Link to="/resume/" activeClassName="active">
+          {/* <Octicon icon={FileDirectory} size='small'/> {``} */}
           Resume
-          <Octicon icon={FileDirectory} size='small'/>
         </Link>
-        <Link to="/contact/" className="header-link">
+        <Link to="/contact/" activeClassName="active">
+          {/* <Octicon icon={Mention} size='small'/> {``} */}
           Contact
-          <Octicon icon={Mention} size='small'/>
         </Link>
       </nav>
     </div>
@@ -38,7 +38,7 @@ const Header = ({ siteTitle }) => (
       header > div {
         margin: 0 auto;
         max-width: 58rem;
-        padding: 1.45rem 1.0875rem;
+        padding: 1.45rem 1rem;
       }
       header h1 {
         width: 50%;
@@ -46,9 +46,6 @@ const Header = ({ siteTitle }) => (
       header nav {
         text-align: right;
         width: 50%;
-      }
-      header nav a {
-        padding: 0 2rem;
       }
     `}</style>
   </header>

@@ -11,8 +11,13 @@ const Footer = () => (
         style={{
           margin: `0 auto`,
           maxWidth: `58rem`,
-          padding: `1.45rem 0`,
+          padding: `1.45rem 1rem`,
         }}
+        // #008D91 - rgba(0, 141, 145, 1.0)
+        // #004F52 - rgba(0, 79, 82, 1.0)
+        // #00CAD1 - rgba(0, 202, 209, 1.0)
+        // #00D6DE - rgba(0, 214, 222, 1.0)
+        // #00B3B8 - rgba(0, 179, 184, 1.0)
       >
       <p
         style={{

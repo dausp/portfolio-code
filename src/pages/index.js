@@ -53,12 +53,26 @@ const IndexPage = () => (
         justify-content: space-around;
       }
       .flex-cont > section {
-        width: 25rem;
+        width: 18rem;
         padding: 1rem;
         margin: 0 1rem 1rem;
+        background: #F9F9F9;
+        border-radius: 0.2rem;
+        // color: #FFF;
       }
-      section {
-        // background: #FAFAFA;
+      section img {
+        margin: -1rem -1rem 1rem;
+        max-width: 18rem;
+      }
+      @media only screen and (min-width: 420px) {
+        .flex-cont > section {
+          width: 25rem;
+          padding: 2rem;
+        }
+        section img {
+          max-width: 25rem;
+          margin: -2rem -2rem 1rem;
+        }
       }
     `}</style>
   </Layout>

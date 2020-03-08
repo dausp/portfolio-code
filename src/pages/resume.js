@@ -16,12 +16,13 @@ const Resume = () => (
     <p><a href="">Download a PDF of it</a></p>
     <article>
       <header className="flex-cont">
-        <div>
+        <div style={{ marginRight: `2rem` }}>
           <h3>Patrick M. Daus</h3>
           <p>Senior Software Developer | Accessibility Consultant</p>
         </div>
         <div>
-          <p>Madison, WI area<br />
+          <p style={{ fontSize: `0.85rem` }}>
+            Madison, WI area<br />
             daus.pat@gmail.com<br />
             dausp.github.com</p>
         </div>
@@ -39,20 +40,37 @@ const Resume = () => (
     </article>
     <style jsx>{`
       article {
-        background: #f9f9f9;
-        padding: 5rem;
+        background: #FBFBFB;
+        padding: 2rem;
         display: flex;
         flex-direction: column;
+      }
+      h3 {
+        margin: 0;
+      }
+      header {
+        margin: 0 0 2rem;
       }
       header.flex-cont {
         justify-content: space-between;
       }
       .exp-cont {
-        width: 70%;
+        width: 100%;
       }
       .else-cont {
-        width 30%;
-        padding-left: 2rem;
+        width 100%;
+      }
+      @media only screen and (min-width: 720px) {
+        article {
+          padding: 5rem;
+        }
+        .exp-cont {
+          width: 70%;
+        }
+        .else-cont {
+          width 30%;
+          padding-left: 2rem;
+        }
       }
     `}</style>
   </Layout>
