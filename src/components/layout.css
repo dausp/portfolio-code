@@ -690,6 +690,37 @@ header a.active {
   border-bottom: 2px solid #39f8ff;
 }
 
+h1 {
+  font-size: 1.6rem;
+}
+svg.med {
+  display: none !important; /* yuck */
+}
+header nav span {
+  display: none;
+}
+svg.med {
+  display: none !important;
+}
+@media only screen and (min-width: 480px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+  svg.sm {
+    display: none !important;
+  }
+  svg.med {
+    display: inline-block !important;
+  }
+}
+@media only screen and (min-width: 600px) {
+  svg.med {
+    display: none !important;
+  }
+  header nav span {
+    display: inline;
+  }
+}
 /* // #008D91 - rgba(0, 141, 145, 1.0) */
 /* // #004F52 - rgba(0, 79, 82, 1.0) */
 /* // #00CAD1 - rgba(0, 202, 209, 1.0) */

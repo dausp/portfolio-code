@@ -67,7 +67,7 @@ const IndexPage = () => (
         margin: -1rem -1rem 1rem;
         max-width: 18rem;
       }
-      @media only screen and (min-width: 460px) {
+      @media only screen and (min-width: 480px) {
         .flex-cont > section {
           width: 25rem;
           padding: 2rem;

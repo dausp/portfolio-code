@@ -13,20 +13,23 @@ const Header = ({ siteTitle }) => (
       </h1>
       <nav>
         <Link to="/" activeClassName="active">
-          {/* <Octicon icon={Home} size='small'/> {``} */}
-          Home
+          <Octicon className="sm" icon={Home} size='small'/>
+          <Octicon className="med" icon={Home} size='medium'/>
+          <span>Home</span>
         </Link>
         {/* <Link to="/work/">
           Work
-          <Octicon icon={FileCode} size='small'/>
+          <Octicon className="sm" icon={FileCode} size='small'/>
         </Link> */}
         <Link to="/resume/" activeClassName="active">
-          {/* <Octicon icon={FileDirectory} size='small'/> {``} */}
-          Resume
+          <Octicon className="sm" icon={FileDirectory} size='small' ariaLabel="Resume"/>
+          <Octicon className="med" icon={FileDirectory} size='medium' ariaLabel="Resume"/>
+          <span>Resum&eacute;</span>
         </Link>
         <Link to="/contact/" activeClassName="active">
-          {/* <Octicon icon={Mention} size='small'/> {``} */}
-          Contact
+          <Octicon className="sm" icon={Mention} size='small' ariaLabel="Contact" />
+          <Octicon className="med" icon={Mention} size='medium' ariaLabel="Contact" />
+          <span>Contact</span>
         </Link>
       </nav>
     </div>
