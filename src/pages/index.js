@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
-import Octicon, {LinkExternal} from '@primer/octicons-react'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import ExtLink from "../components/ext-link"
 
 const IndexPage = () => (
   <Layout>
@@ -20,27 +20,50 @@ const IndexPage = () => (
           Ascendium Philanthropy
         </h3>
         <p>I led develop on this project back when it was called Community Investments.</p>
-        <p><a href="https://www.ascendiumphilanthropy.org/" target="_blank" rel="noopener noreferrer">See the Ascendium Philanthropy website <Octicon icon={LinkExternal} size='small'/></a></p>
+        <p>
+          <ExtLink title="See the Ascendium Philanthropy website">
+            https://www.ascendiumphilanthropy.org/
+          </ExtLink>
+        </p>
       </section>
       <section>
         <h3>
           <img src={'/mgl.png'} alt="" />
           MGL website
         </h3>
-        <p>The main website for borrowers to pay their student loans. Other than <a href="https://mygreatlakes.org/educate/knowledge-center/home.html" target="_blank" rel="noopener noreferrer">the Knowledge Center articles <Octicon icon={LinkExternal} size='small'/></a>, most of the content is post-login.</p>
-        <p><a href="https://mygreatlakes.org/" target="_blank" rel="noopener noreferrer">See mygreatlakes.org <Octicon icon={LinkExternal} size='small'/></a></p>
+        <p>
+          The main website for borrowers to pay their student loans. Other than {` `}
+          <ExtLink title="the Knowledge Center articles">
+          https://mygreatlakes.org/educate/knowledge-center/home.html
+          </ExtLink>
+          {` `}
+          most of the content is post-login.
+        </p>
+        <p>
+          <ExtLink title="See mygreatlakes.org">
+            https://mygreatlakes.org/
+          </ExtLink>
+        </p>
       </section>
       <section>
         <img src={'/about.png'} alt="" />
         <h3>About Portal</h3>
         <p>The About portal for the Great Lakes Corp., which I provided consultation and sometimes maintenenance for the website.</p>
-        <p><a href="https://home.mygreatlakes.org/" target="_blank" rel="noopener noreferrer"> See the About Portal <Octicon icon={LinkExternal} size='small'/></a></p>
+        <p>
+          <ExtLink title="See the About Portal">
+            https://home.mygreatlakes.org/
+          </ExtLink>
+        </p>
       </section>
       <section>
         <img src={'/financial.png'} alt="" />
         <h3>Financial Aid Professionals</h3>
         <p>The Financial Aid Professionals portal for the Great Lakes Corp., which I provided consultation and sometimes maintenenance for the website.</p>
-        <p><a href="https://schools.mygreatlakes.org/web/FAP/index.html" target="_blank" rel="noopener noreferrer">See the Financial Aid Professionals portal <Octicon icon={LinkExternal} size='small'/></a></p>
+        <p>
+          <ExtLink title="See the Financial Aid Professionals portal">
+            https://schools.mygreatlakes.org/web/FAP/index.html
+          </ExtLink>
+        </p>
       </section>
       {/* <section>
         <h3>ServUI</h3>

@@ -1,7 +1,8 @@
 import React from "react"
-
+import Octicon, {FilePdf} from '@primer/octicons-react'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import ExtLink from "../components/ext-link"
 
 import Experience from "../components/resume/experience"
 import Education from "../components/resume/education"
@@ -12,8 +13,14 @@ const Resume = () => (
   <Layout>
     <SEO title="Pat Daus's Resume" />
     <h2>Resum&eacute;</h2>
-    <p>Check out my Resum&eacute;</p>
-    <p><a href="">Download a PDF of it</a></p>
+    <p>Below you'll find a responsive HTML version of my Resum&eacute;.</p>
+    <p>
+      You can also <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">download a PDF version of my resum&eacute;.</a>
+      {` `}
+      <span style={{ color: `#d60a0b` }}>
+        <Octicon icon={FilePdf} size='small'/>
+      </span>
+    </p>
     <article>
       <header className="flex-cont">
         <div style={{ marginRight: `2rem` }}>
@@ -24,7 +31,7 @@ const Resume = () => (
           <p style={{ fontSize: `0.85rem` }}>
             Madison, WI area<br />
             daus.pat@gmail.com<br />
-            dausp.github.com</p>
+            github.com/dausp</p>
         </div>
       </header>
       <div className="flex-cont">
@@ -67,6 +74,9 @@ const Resume = () => (
       }
       .else-cont {
         width 100%;
+      }
+      header > div:first {
+        width: 70%;
       }
       @media only screen and (min-width: 720px) {
         article {

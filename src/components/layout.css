@@ -699,9 +699,16 @@ svg.med {
 header nav span {
   display: none;
 }
-svg.med {
-  display: none !important;
+footer a {
+  color: #FFFFFF;
+  background-color: #008D91;
+  border-bottom: 1px solid rgba(255,255,255,0.6);
 }
+footer a:hover, footer a:focus {
+  background-color: #00777c;
+  border-bottom-color: #FFF;
+}
+
 @media only screen and (min-width: 480px) {
   h1 {
     font-size: 2.25rem;

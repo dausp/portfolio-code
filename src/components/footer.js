@@ -1,5 +1,5 @@
 import React from "react"
-import Octicon, {LinkExternal} from '@primer/octicons-react'
+import ExtLink from "../components/ext-link"
 
 const Footer = () => (
   <footer
@@ -9,7 +9,12 @@ const Footer = () => (
   >
     <div className='flex-cont'>
       <p style={{marginRight: `1rem`}}>&copy; Patrick Daus {new Date().getFullYear()}</p>
-      <p className="right">This site was built with React (Gatsby), <a href="https://github.com/dausp/portfolio-code" target="_blank" rel="noopener noreferrer">see the code on GitHub <Octicon icon={LinkExternal} size='small'/></a>.</p>
+      <p className="right">
+        This site was built with React (Gatsby), {` `}
+        <ExtLink title="see the code on GitHub">
+          https://github.com/dausp/portfolio-code
+        </ExtLink>
+      </p>
     </div>
     <style jsx>
       {`
@@ -25,15 +30,6 @@ const Footer = () => (
           text-align: center;
           color: white;
           margin: 0;
-        }
-        a {
-          color: #FFFFFF;
-          background-color: #008D91;
-          border-bottom: 1px solid rgba(255,255,255,0.6);
-        }
-        a:hover, a:focus {
-          background-color: #00777c;
-          border-bottom-color: #FFF;
         }
         @media only screen and (min-width: 720px) {
           .flex-cont {

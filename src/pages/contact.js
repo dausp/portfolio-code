@@ -1,6 +1,6 @@
 import React from "react"
-import Octicon, {LinkExternal, Mail} from '@primer/octicons-react'
-
+import Octicon, { Mail } from '@primer/octicons-react'
+import ExtLink from "../components/ext-link"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -9,13 +9,17 @@ const Contact = () => (
     <SEO title="Pat Daus's Contact Information" />
     <h2>Contact Info</h2>
     <p>If you are interested in getting in touch about any projects that you think I could help with, please feel free to either contact me on LinkedIn or send me an email.</p>
-    <p>Connect with or message me on LinkedIn: {` `}
-      <a href="https://www.linkedin.com/in/patrick-daus-53491322/" target="_blank" rel="noopener noreferrer">
-        LinkedIn <Octicon icon={LinkExternal} size='small'/>
-      </a>
-    </p>
-    <p>Feel free to <a href="mailto:daus.pat@gmail.com" target="_blank" rel="noopener noreferrer">send me an email <Octicon icon={Mail} size='small'/></a> (daus.pat@gmail.com).
-    </p>
+    <ul>
+      <li>
+        Connect with or {` `}
+        <ExtLink title="message me on LinkedIn">
+          https://www.linkedin.com/in/patrick-daus-53491322/
+        </ExtLink>
+      </li>
+      <li>
+        Feel free to <a href="mailto:daus.pat@gmail.com">send me an email</a> <Octicon icon={Mail} size='small'/>
+      </li>
+    </ul>
   </Layout>
 )
 
