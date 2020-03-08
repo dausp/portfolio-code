@@ -7,30 +7,45 @@ const Footer = () => (
       background: `#004F52`
     }}
   >
-    <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: `58rem`,
-          padding: `1.45rem 1rem`,
-        }}
-        // #008D91 - rgba(0, 141, 145, 1.0)
-        // #004F52 - rgba(0, 79, 82, 1.0)
-        // #00CAD1 - rgba(0, 202, 209, 1.0)
-        // #00D6DE - rgba(0, 214, 222, 1.0)
-        // #00B3B8 - rgba(0, 179, 184, 1.0)
-      >
-      <p
-        style={{
-          color: `white`,
-          margin: `0`
-        }}
-      >
-        &copy; Patrick Daus {new Date().getFullYear()}. Built with React (Gatsby), <a href="https://github.com/dausp/portfolio-code" target="_blank" rel="noopener noreferrer">see the code on GitHub<Octicon icon={LinkExternal} size='small' ariaLabel='GitHub'/></a>.</p>
+    <div className='flex-cont'>
+      <p style={{marginRight: `1rem`}}>&copy; Patrick Daus {new Date().getFullYear()}</p>
+      <p className="right">This site was built with React (Gatsby), <a href="https://github.com/dausp/portfolio-code" target="_blank" rel="noopener noreferrer">see the code on GitHub <Octicon icon={LinkExternal} size='small'/></a>.</p>
     </div>
     <style jsx>
       {`
+        .flex-cont {
+          margin: 0 auto;
+          max-width: 58rem;
+          padding: 1.45rem 1rem;
+          font-size: 0.875rem;
+          justify-content: space-around;
+          flex-direction: column;
+        }
+        p {
+          text-align: center;
+          color: white;
+          margin: 0;
+        }
         a {
           color: #FFFFFF;
+          background-color: #008D91;
+          border-bottom: 1px solid rgba(255,255,255,0.6);
+        }
+        a:hover, a:focus {
+          background-color: #00777c;
+          border-bottom-color: #FFF;
+        }
+        @media only screen and (min-width: 720px) {
+          .flex-cont {
+            justify-content: space-between;
+            flex-direction: row;
+          }
+          p {
+            text-align: left;
+          }
+          p.right {
+            text-align: right;
+          }
         }
       `}
       </style>

@@ -37,6 +37,12 @@ const Resume = () => (
           <Awards />
         </div>
       </div>
+      <p style={{
+        textAlign: `center`,
+        margin: `1rem 0 -1rem`
+      }}>
+        <em>References available upon request.</em>
+      </p>
     </article>
     <style jsx>{`
       article {
@@ -44,9 +50,11 @@ const Resume = () => (
         padding: 2rem;
         display: flex;
         flex-direction: column;
+        margin-bottom: 1rem;
       }
       h3 {
         margin: 0;
+        font-size: 2rem;
       }
       header {
         margin: 0 0 2rem;

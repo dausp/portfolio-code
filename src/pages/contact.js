@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 const Contact = () => (
   <Layout>
-    <SEO title="Contact information" />
+    <SEO title="Pat Daus's Contact Information" />
     <h2>Contact Info</h2>
     <p>If you are interested in getting in touch about any projects that you think I could help with, please feel free to either contact me on LinkedIn or send me an email.</p>
     <p>Connect with or message me on LinkedIn: {` `}

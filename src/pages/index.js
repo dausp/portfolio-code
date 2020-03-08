@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import Octicon, {LinkExternal} from '@primer/octicons-react'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -17,26 +17,30 @@ const IndexPage = () => (
       <section>
         <h3>
           <img src={'/ascendium.png'} alt="" />
-          <a href="https://www.ascendiumphilanthropy.org/" target="_blank" rel="noopener noreferrer">Ascendium Philanthropy</a>
+          Ascendium Philanthropy
         </h3>
-        <p>I was the lead develop on this project back when it was called Community Investments.</p>
+        <p>I led develop on this project back when it was called Community Investments.</p>
+        <p><a href="https://www.ascendiumphilanthropy.org/" target="_blank" rel="noopener noreferrer">See the Ascendium Philanthropy website <Octicon icon={LinkExternal} size='small'/></a></p>
       </section>
       <section>
         <h3>
           <img src={'/mgl.png'} alt="" />
-          <a href="https://mygreatlakes.org/" target="_blank" rel="noopener noreferrer">mygreatlakes.org</a>
+          MGL website
         </h3>
-        <p>Knowledge Center articles</p>
+        <p>The main website for borrowers to pay their student loans. Other than <a href="https://mygreatlakes.org/educate/knowledge-center/home.html" target="_blank" rel="noopener noreferrer">the Knowledge Center articles <Octicon icon={LinkExternal} size='small'/></a>, most of the content is post-login.</p>
+        <p><a href="https://mygreatlakes.org/" target="_blank" rel="noopener noreferrer">See mygreatlakes.org <Octicon icon={LinkExternal} size='small'/></a></p>
       </section>
       <section>
         <img src={'/about.png'} alt="" />
-        <h3><a href="https://home.mygreatlakes.org/" target="_blank" rel="noopener noreferrer">About Portal</a></h3>
-        <p>Assisted</p>
+        <h3>About Portal</h3>
+        <p>The About portal for the Great Lakes Corp., which I provided consultation and sometimes maintenenance for the website.</p>
+        <p><a href="https://home.mygreatlakes.org/" target="_blank" rel="noopener noreferrer"> See the About Portal <Octicon icon={LinkExternal} size='small'/></a></p>
       </section>
       <section>
         <img src={'/financial.png'} alt="" />
-        <h3><a href="https://schools.mygreatlakes.org/web/FAP/index.html" target="_blank" rel="noopener noreferrer">Financial Aid Professionals</a></h3>
-        <p>Assisted</p>
+        <h3>Financial Aid Professionals</h3>
+        <p>The Financial Aid Professionals portal for the Great Lakes Corp., which I provided consultation and sometimes maintenenance for the website.</p>
+        <p><a href="https://schools.mygreatlakes.org/web/FAP/index.html" target="_blank" rel="noopener noreferrer">See the Financial Aid Professionals portal <Octicon icon={LinkExternal} size='small'/></a></p>
       </section>
       {/* <section>
         <h3>ServUI</h3>
@@ -57,14 +61,13 @@ const IndexPage = () => (
         padding: 1rem;
         margin: 0 1rem 1rem;
         background: #F9F9F9;
-        border-radius: 0.2rem;
-        // color: #FFF;
+        outline: 1px solid rgba(0,0,0,0.2);
       }
       section img {
         margin: -1rem -1rem 1rem;
         max-width: 18rem;
       }
-      @media only screen and (min-width: 420px) {
+      @media only screen and (min-width: 460px) {
         .flex-cont > section {
           width: 25rem;
           padding: 2rem;
