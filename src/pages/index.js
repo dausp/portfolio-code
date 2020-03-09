@@ -19,7 +19,7 @@ const IndexPage = () => (
           <img src={'/ascendium.png'} alt="" />
           Ascendium Philanthropy
         </h3>
-        <p>I led develop on this project back when it was called Community Investments.</p>
+        <p>A website for the Philanthropy arm of Ascendium. I led the development of this product using Node, Grunt, Less and JavaScript.</p>
         <p>
           <ExtLink title="See the Ascendium Philanthropy website">
             https://www.ascendiumphilanthropy.org/
@@ -48,7 +48,7 @@ const IndexPage = () => (
       <section>
         <img src={'/about.png'} alt="" />
         <h3>About Portal</h3>
-        <p>The About portal for the Great Lakes Corp., which I provided consultation and sometimes maintenenance for the website.</p>
+        <p>The About portal for the Great Lakes Corp., which I provided consultation for and sometimes provided maintenenance support.</p>
         <p>
           <ExtLink title="See the About Portal">
             https://home.mygreatlakes.org/
@@ -58,7 +58,7 @@ const IndexPage = () => (
       <section>
         <img src={'/financial.png'} alt="" />
         <h3>Financial Aid Professionals</h3>
-        <p>The Financial Aid Professionals portal for the Great Lakes Corp., which I provided consultation and sometimes maintenenance for the website.</p>
+        <p>The Financial Aid Professionals portal for the Great Lakes Corp., which I provided responsive web design consultation on.</p>
         <p>
           <ExtLink title="See the Financial Aid Professionals portal">
             https://schools.mygreatlakes.org/web/FAP/index.html
