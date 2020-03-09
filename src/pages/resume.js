@@ -2,7 +2,6 @@ import React from "react"
 import Octicon, {FilePdf} from '@primer/octicons-react'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import ExtLink from "../components/ext-link"
 
 import Experience from "../components/resume/experience"
 import Education from "../components/resume/education"
@@ -31,7 +30,7 @@ const Resume = () => (
           <p style={{ fontSize: `0.85rem` }}>
             Madison, WI area<br />
             daus.pat@gmail.com<br />
-            github.com/dausp</p>
+            dausp.github.io</p>
         </div>
       </header>
       <div className="flex-cont">
@@ -53,7 +52,7 @@ const Resume = () => (
     </article>
     <style jsx>{`
       article {
-        background: #FBFBFB;
+        background: #F8F8F8;
         padding: 2rem;
         display: flex;
         flex-direction: column;
