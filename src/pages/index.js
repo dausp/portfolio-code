@@ -8,8 +8,8 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Pat Daus's Portfolio website" />
     <h2>About Me</h2>
-    <p>Hi, my name is Patrick Daus and I'm a software developer in the Madison, Wiconsin area specializing in UI development with React and other web technologies.</p>
-    <p>Here you'll find some examples of the work I've done over the years as a web developer. You can also take a look at my <Link to="/resume/">Resum&eacute;</Link>, and if you're looking for a React developer with expert knowledge of web accessibility then feel free to <Link to="/contact/">get in touch</Link>.</p>
+    <p>Hi, my name is Patrick Daus and I'm a web developer in the Wausau, Wiconsin area specializing in using React, PHP and other web technologies.</p>
+    <p>Here you'll find some examples of the work I've done over the years. You can also take a look at my <Link to="/resume/">Resum&eacute;</Link>, and if you're looking for a React developer with expert knowledge of web accessibility then feel free to <Link to="/contact/">get in touch</Link>.</p>
 
     <h2>Portfolio</h2>
     <p>Here you can see some examples of my most recent work.</p>
@@ -19,7 +19,7 @@ const IndexPage = () => (
           <img src={'/ascendium.png'} alt="" />
           Ascendium Philanthropy
         </h3>
-        <p>A website for the Philanthropy arm of Ascendium. I led the development of this product using Node, Grunt, Less and JavaScript.</p>
+        <p>A website for the philanthropic arm of Ascendium. I led the development of this product using Node, Grunt, Less and JavaScript.</p>
         <p>
           <ExtLink title="See the Ascendium Philanthropy website">
             https://www.ascendiumphilanthropy.org/
@@ -32,12 +32,11 @@ const IndexPage = () => (
           MGL website
         </h3>
         <p>
-          The main website for borrowers to pay their student loans. Other than {` `}
-          <ExtLink title="the Knowledge Center articles">
+          The main website for borrowers to pay their student loans. Check out the {` `}
+          <ExtLink title="the Knowledge Center articles.">
           https://mygreatlakes.org/educate/knowledge-center/home.html
           </ExtLink>
           {` `}
-          most of the content is post-login.
         </p>
         <p>
           <ExtLink title="See mygreatlakes.org">
@@ -48,7 +47,7 @@ const IndexPage = () => (
       <section>
         <img src={'/about.png'} alt="" />
         <h3>About Portal</h3>
-        <p>The About portal for the Great Lakes Corp., which I provided consultation for and sometimes provided maintenenance support.</p>
+        <p>The About portal for the Great Lakes Higher Education Corporation.</p>
         <p>
           <ExtLink title="See the About Portal">
             https://home.mygreatlakes.org/
@@ -58,7 +57,7 @@ const IndexPage = () => (
       <section>
         <img src={'/financial.png'} alt="" />
         <h3>Financial Aid Professionals</h3>
-        <p>The Financial Aid Professionals portal for the Great Lakes Corp., which I provided responsive web design consultation on.</p>
+        <p>The Financial Aid Professionals portal for the Great Lakes Higher Education Corporation.</p>
         <p>
           <ExtLink title="See the Financial Aid Professionals portal">
             https://schools.mygreatlakes.org/web/FAP/index.html

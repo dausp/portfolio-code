@@ -1,7 +1,7 @@
 import React from "react"
 
 const Awards = () => (
-  <section>
+  <section style={{marginTop: `3rem`}}>
     <h4>Awards</h4>
     <h5 aria-label="Boy Scouts of America">B.S.A.</h5>
     <h6>Eagle Scout</h6>

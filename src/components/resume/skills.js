@@ -1,7 +1,7 @@
 import React from "react"
 
 const Skills = () => (
-  <section>
+  <section style={{marginTop: `3rem`}}>
     <h4>Skills</h4>
     <ul>
       <li>PHP / MySQL</li>

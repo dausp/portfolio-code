@@ -23,12 +23,11 @@ const Resume = () => (
     <article>
       <header className="flex-cont">
         <div style={{ marginRight: `2rem` }}>
-          <h3>Patrick M. Daus</h3>
-          <p>Senior Software Developer | Accessibility Consultant</p>
+          <h3>Patrick M. Daus <span style={{ display: `block`, fontSize: `1.5rem`, fontWeight: `500` }}>Web Developer</span></h3>
         </div>
         <div>
           <p style={{ fontSize: `0.85rem` }}>
-            Madison, WI area<br />
+            Wausau, WI area<br />
             daus.pat@gmail.com<br />
             dausp.github.io</p>
         </div>

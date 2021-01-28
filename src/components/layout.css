@@ -733,3 +733,11 @@ footer a:hover, footer a:focus {
 /* // #00CAD1 - rgba(0, 202, 209, 1.0) */
 /* // #00D6DE - rgba(0, 214, 222, 1.0) */
 /* // #00B3B8 - rgba(0, 179, 184, 1.0) */
+
+.pipe {
+  font-weight: normal;
+}
+.dates {
+  font-weight: normal;
+  font-style: italic;
+}

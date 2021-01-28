@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import Octicon, {Home, FileCode, FileDirectory, Mention} from '@primer/octicons-react'
+import Octicon, {Home, FileDirectory, Mention} from '@primer/octicons-react'
 
 const Header = ({ siteTitle }) => (
   <header>
@@ -17,10 +17,6 @@ const Header = ({ siteTitle }) => (
           <Octicon className="med" icon={Home} size='medium'/>
           <span>Home</span>
         </Link>
-        {/* <Link to="/work/">
-          Work
-          <Octicon className="sm" icon={FileCode} size='small'/>
-        </Link> */}
         <Link to="/resume/" activeClassName="active">
           <Octicon className="sm" icon={FileDirectory} size='small' ariaLabel="Resume"/>
           <Octicon className="med" icon={FileDirectory} size='medium' ariaLabel="Resume"/>

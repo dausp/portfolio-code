@@ -7,4 +7,4 @@ To run locally:
 
 To export static content:
 * Run `gatsby build`
-* Test prod build locally with `gatsby build`
+* Test prod build locally with `gatsby serve`
