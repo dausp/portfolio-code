@@ -4,18 +4,21 @@ const Skills = () => (
   <section>
     <h4>Skills</h4>
     <ul>
-      <li>HTML5 / CSS3 / JavaScript (ES6)</li>
-      <li>Sass/Less / CSS-in-JS</li>
-      <li>React, Next.js, GatsbyJS, Webpack</li>
-      <li>Git, Git Bash, SVN</li>
-      <li>TypeScript, Node.js, Grunt, Jasmine</li>
-      <li>AJAX, jQuery</li>
-      <li>Web Accessibility, WAI-ARIA</li>
-      <li>Responsive Design</li>
-      <li>Test Driven Development</li>
-      <li>Agile / Scrum</li>
-      <li>Python / SQL / Java / PHP</li>
+      <li>PHP / MySQL</li>
+      <li>HTML / CSS, Sass, Less</li>
+      <li>Moodle LMS</li>
+      <li>JavaScript / TypeScript</li>
+      <li>React / Node / Gatsby</li>
+      <li>jQuery / Bootstrap</li>
+      <li>Grunt, Gulp / Webpack</li>
+      <li>Git, CI/CD, JIRA</li>
+      <li>Responsive Web Design</li>
+      <li>OOP</li>
+      <li>Accessibility, WAI-ARIA</li>
       <li>Wordpress</li>
+      <li>Jest, PHPUnit</li>
+      <li>Java / Spring</li>
+      <li>Agile, Scrum</li>
     </ul>
   </section>
 )

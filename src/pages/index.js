@@ -65,15 +65,6 @@ const IndexPage = () => (
           </ExtLink>
         </p>
       </section>
-      {/* <section>
-        <h3>ServUI</h3>
-        <p>Not publicly available</p>
-      </section>
-      <section>
-        <img src={'/fastchoice.png'} alt="" />
-        <h3>FASTChoice</h3>
-        <p>Not publicly available</p>
-      </section> */}
     </div>
     <style jsx>{`
       .flex-cont {
